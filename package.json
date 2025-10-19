@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
-    "test": "jest"
+    "test": "jest",
+    "build": "npm install --omit=dev"
   },
   "dependencies": {
     "axios": "^1.12.2",
@@ -20,6 +21,9 @@
     "jest": "^30.2.0",
     "nodemon": "^3.1.10",
     "supertest": "^7.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "keywords": ["api", "profile", "cat-facts", "express"],
   "author": "George Owoicho",
